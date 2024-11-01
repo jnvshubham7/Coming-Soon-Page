@@ -1,78 +1,71 @@
-/* Custom Styles */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient from purple to blue */
-  color: #ffffff; /* Updated text color for better contrast against the gradient */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #ffffff;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
 }
 
-/* Main Container */
 .coming-soon-container {
   max-width: 600px;
   padding: 2rem;
-  background-color: #ffffff; /* Set to white for a cleaner look */
-  color: #222; /* Enhanced contrast */
-  border-radius: 12px; /* Slightly more rounded corners */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
-  text-align: center; /* Center aligns text within the container */
-  margin: 0 auto; /* Centers the container on the page */
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  background-color: #ffffff;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
   margin-bottom: 20px;
 }
 
 .coming-soon-container:hover {
-  transform: scale(1.05); /* Enhanced scaling effect */
+  transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-/* Title */
 .coming-soon-title {
-  font-size: clamp(2rem, 2.5vw, 3rem); /* Responsive font sizing */
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 700;
-  background: linear-gradient(45deg, #4facfe, #00f2fe); /* Elegant blue-teal gradient */
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Shows gradient color */
+  -webkit-text-fill-color: transparent;
   animation: fadeIn 2s ease-out, moveUp 1.5s ease-out;
 }
 
-/* Subtitle */
 .coming-soon-subtitle {
-  font-size: clamp(1.2rem, 1.5vw, 1.4rem); /* Responsive subtitle font */
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
   margin: 0.5rem 0 1.5rem;
-  color: #555555; /* Updated subtitle color */
+  color: #555555;
   font-weight: bold;
 }
 
-/* Information Text */
 .info-text {
-  font-size: clamp(0.9rem, 1.2vw, 1rem); /* Responsive info text font */
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   margin: 0.5rem 0 1.5rem;
-  color: #666666; /* Lighter shade for info text */
+  color: #666666;
 }
 
-/* Visit Link */
 .visit-link {
   display: block;
-  color: #0056a1; /* Darker shade for links */
-  font-size: clamp(0.9rem, 1.2vw, 1.1rem); /* Responsive link font */
+  color: #0056a1;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
   margin-bottom: 1.5rem;
-  text-decoration: underline; /* Added underline for links */
+  text-decoration: underline;
 }
 
-/* Button */
 .usa-button {
-  font-size: clamp(1rem, 1.5vw, 1.2rem); /* Responsive button font */
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   padding: 0.85rem 2.2rem;
-  background-color: #004080; /* Richer color */
+  background-color: #004080;
   color: #ffffff;
-  border-radius: 8px; /* More rounded for a soft look */
+  border-radius: 8px;
   text-transform: uppercase;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   margin-top: 1.2rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -81,33 +74,31 @@ body {
 
 .usa-button:hover {
   background-color: #002850;
-  transform: translateY(-3px); /* Lift effect */
+  transform: translateY(-3px);
 }
 
-/* Social Icons */
 .social-icons-wrapper {
   text-align: center;
-  margin-top: 2rem; /* Adds space above the social icons */
+  margin-top: 2rem;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Spacing between icons */
+  gap: 1rem;
 }
 
 .social-icon {
   font-size: 1.5rem;
-  color: #333333; /* Darker color for icons */
+  color: #333333;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
-  color: #0056a1; /* Darker accent color on hover */
-  transform: scale(1.1); /* Slight scaling effect on hover */
+  color: #0056a1;
+  transform: scale(1.1);
 }
 
-/* Keyframes for fade-in and move-up animations */
 @keyframes fadeIn {
   0% { opacity: 0; transform: scale(0.9); }
   100% { opacity: 1; transform: scale(1); }
